@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#main{
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Space Grotesk', sans-serif;
+}
+#main .left{
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    width: 35%;
+    height: 100vh;
+}
+#main .left .top{
+    background-image: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 180px;
+    width: 340px;
+    position: absolute;
+    top: 100px;
+    left: 230px;
+    border-radius: 8px;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 20px;
+}
+#main .left .top img{
+    height: 35px;
+    margin-bottom: 35px;
+}
+#main .left .top h3{
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+#main .left .top span{
+    display: flex;  
+    justify-content: space-between;
+    width: 270px;
+}
+#main .left em{
+    display: flex;
+}
+#main .left .bottom{
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 180px;
+    width: 340px;
+    position: absolute;
+    top: 330px;
+    left: 300px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#main .left .bottom h3{
+    letter-spacing: 1.5px;
+    padding-right: 60px;
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-end;
+}
+#main .right{
+    background: white;
+    height: 100vh;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main .right span{
+    color:  hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#main .right input{
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-bottom-width: 2px;
+    border-radius: 7px;
+    height: 47px;
+    margin-bottom: 6px;
+    outline: 0;
+    padding: 0 15px;
+}
+#main .right input::placeholder{
+    color: hsl(279, 6%, 55%);
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+.right p{
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: red;
+    display: none;
+}
+.error #error{
+    display: block;
+}
+#main .right .ford{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#main .right .row{
+    display: flex;
+    justify-content: space-between  ;
+}
+#main .right .row .date{
+    display: flex;
+    flex-direction: column;
+}
+#main .right .row .date .brow{
+    display: flex;
+}
+#main .right .row .date .brow select{
+    width: 80px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-bottom-width: 2px;
+    outline: 0;
+    border-radius: 5px;
+}
+#main .right .row .date .brow select option{
+    color: hsl(279, 6%, 55%);
+    font-size: 16px;
+    padding: 0 15px;
+    letter-spacing: .5px;
+}
+#main .right .row .cvc{
+    width: 200px;
+    margin-left: 10px;
+}
+#main .right button{
+    color: white;
+    background-color:  hsl(278, 68%, 11%);
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.thanks{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thanks img{
+    height: 60px;
+    margin-bottom: 25px;
+}
+.thanks h1{
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.thanks p{
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+.thanks button{
+    color: white;
+    background-color:  hsl(278, 68%, 11%);
+    height: 40px;
+    width: 30%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section id="main">
+    <div class="left">
+      <div class="top">
+        <img src="./images/card-logo.svg" alt="">
+        <h3 class="place">0000 0000 0000 0000</h3>
+        <span>
+          <h4 class="cardName">Jane Appleseed</h4>
+          <em><h4 class="cardMonth">00</h4>/<h4 class="cardYear">00</h4></em>
+        </span>
+      </div>
+      <div class="bottom">
+        <h3 class="cardCVC">000</h3>
+      </div>
+    </div>
+
+    <div class="right" id="rightDiv">
+      <form action="#" id="formDiv">
+        <div class="name ford" >
+          <span>cardholder name</span>
+          <input type="text" placeholder="e.g. Jane Appleseed" name="nam" id="card-name" class="card-name">
+          <p id="error">Wrong format, words only</p>
+        </div>
+        <div class="number ford" >
+          <span >card number</span>
+          <input type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16" name="num" id="card-num" class="card-num" >
+          <p id="error">Wrong format, numbers only</p>
+        </div>
+        <div class="row">
+          <div class="date ford">
+            <span >Exp. Date (MM/YY)</span>
+            <div class="brow">
+              <select name="" id="month" class="month-year" required>
+                <option value="month" selected disabled>MM</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+
+              <select name="" id="year" class="year-month" required>
+                <option value="year" selected disabled>YY</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030 </option>
+              </select>
+              <p id="error">Can't be blank</p>
+            </div>
+          </div>
+          <div class="cvc ford">
+            <span >cvc</span>
+            <input type="text" placeholder="e.g. 123" maxlength="3" minlength="3" name="cvc" id="CVC" class="CVC">
+            <p id="error">Can't be blank</p>
+          </div>
+        </div>
+        <button type="submit" id="submit">Confirm</button>
+      </form>
+      <div class="thanks" id="ThanksCard">
+        <img src="./images/icon-complete.svg" alt="">
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        <a href="./index.html"><button type="submit" id="continue">Continue</button></a>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
