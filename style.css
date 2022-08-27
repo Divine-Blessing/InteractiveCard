@@ -87,6 +87,7 @@
     font-weight: 500;
     font-size: 15px;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 #main .right input{
     border: 1.5px solid rgba(0, 0, 0, 0.2);
@@ -193,3 +194,304 @@
     margin-top: 10px;
     cursor: pointer;
 }
+
+@media (max-width: 1024px){
+    #main{
+        overflow: hidden;
+    }
+    #main .left .top{
+        height: 170px;
+        width: 310px;
+        left: 120px;
+    }
+    #main .left .top img{
+        height: 30px;
+        margin-bottom: 30px;
+    }
+    #main .left .top h3{
+        letter-spacing: 2px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    #main .left .bottom{
+        height: 170px;
+        width: 310px;
+        top: 330px;
+        left: 140px;
+    }
+}
+@media (max-width: 950px) {
+    #main .left .top{
+        height: 170px;
+        width: 300px;
+        top: 100px;
+        left: 50px;
+    }
+    #main .left .top img{
+        height: 30px;
+        margin-bottom: 30px;
+    }
+    #main .left .top h3{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    #main .left .top span{
+        width: 240px;
+    }
+    #main .left h4{
+        font-size: 14px;
+    }
+    #main .left .bottom{
+        height: 170px;
+        width: 300px;
+        top: 330px;
+        left: 70px;
+    }
+    #main .left .bottom h3{
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+    #main .right span{
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    #main .right input{
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        height: 45px;
+        width: 280px;
+    }
+    #main .right input::placeholder{
+        font-size: 14px;
+    }
+    .right p{
+        font-size: 13px;
+    }
+    #main .right .row .date .brow select{
+        width: 65px;
+        height: 45px;
+        margin-right: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    #main .right .row .cvc{
+        width: 120px;
+        margin-left: 5px;
+    }
+    #main .right button{
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 767px){
+    #main .left .top{
+        height: 170px;
+        width: 300px;
+        top: 100px;
+        left: 20px;
+    }
+    #main .left .bottom{
+        height: 170px;
+        width: 300px;
+        top: 330px;
+        left: 50px;
+    }
+}
+@media (max-width: 734px){
+    #main .left .bottom{
+        left: 45px;
+    }
+    #main .left .bottom h3{
+        padding-right: 40px;
+    }
+    #main .right input{
+        width: 250px;
+    }
+    #main .right .row .date .brow select{
+        width: 55px;
+    }
+    #main .right .row .cvc{
+        width: 120px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 700px){
+    #main{
+        flex-direction: column;
+    }
+    #main .left, #main .right{
+        width: 100%;
+    }
+    #main .left{
+        height: 40vh;
+        background-size: cover;
+    }
+    #main .left .top{
+        height: 160px;
+        width: 320px;
+        top: 130px;
+        left: 80px;
+        padding: 20px 20px;
+        z-index: 10;
+    }
+    #main .left .top h3{
+        font-size: 20px;
+    }
+    #main .left .bottom{
+        height: 160px;
+        width: 320px;
+        top: 30px;
+        left: 250px;
+    }
+    #main .left .bottom h3{
+        font-size: 18px;
+    }
+    #main .right input{
+        width: 400px;
+    }
+    #main .right .row .date .brow select{
+        width: 75px;
+    }
+    #main .right .row .cvc{
+        width: 230px;
+    }
+}
+@media (max-width: 550px){
+    #main .left .top{
+        height: 150px;
+        width: 310px;
+        top: 130px;
+        left: 30px;
+    }
+    #main .left .top h3{
+        font-size: 18px;
+    }
+    #main .left .top span{
+        width: 200px;
+    }
+    #main .left .top h4{
+        font-size: 13px;
+    }
+    #main .left .bottom{
+        height: 150px;
+        width: 310px;
+        left: 200px;
+    }
+    #main .left .bottom h3{
+        padding-right: 70px;
+    }
+    #main .right input{
+        width: 300px;
+    }
+    #main .right .row .date .brow select{
+        width: 50px;
+    }
+    #main .right .row .cvc{
+        width: 170px;
+        margin-left: 0px;
+    }
+
+}
+@media (max-width: 480px){
+    #main .left{
+        background-size: cover;
+        height: 30vh;
+    }
+    #main .left .top{
+        height: 140px;
+        width: 280px;
+        top: 100px;
+        left: 30px;
+    }
+    #main .left .top img{
+        margin-bottom: 15px;
+    }
+    #main .left .bottom{
+        height: 140px;
+        width: 280px;
+        left: 180px;
+        top: 10px;
+    }
+}
+@media (max-width: 430px){
+    #main .left .top{
+        height: 120px;
+        width: 260px;
+        top: 100px;
+        left: 30px;
+        padding: 10px 10px;
+    }
+    #main .left .top img{
+        height: 22px;
+        margin-bottom: 15px;
+    }
+    #main .left .top h3{
+        letter-spacing: 1px;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    #main .left .top span{
+        width: 180px;
+    }
+    #main .left .bottom{
+        height: 120px;
+        width: 260px;
+        left: 150px;
+        top: 10px;
+    }
+    #main .left .bottom h3{
+        font-size: 18px;
+    }
+    #main .right{
+        height: 80vh;
+    }
+    #main .right span{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    #main .right input {
+        height: 40px;
+        width: 250px;
+    }
+    #main .right input::placeholder{
+        font-size: 13px;
+    }
+    #main .right .row .date .brow select{
+        height: 40px;
+        width: 50px;
+    }
+    #main .right .row .cvc{
+        width: 130px;
+    }
+    
+}
+@media (max-width: 375px){
+    #main .left .top{
+        height: 120px;
+        width: 260px;
+        top: 100px;
+        left: 10px;
+        padding: 10px 10px;
+    }
+    #main .left .bottom{
+        height: 120px;
+        width: 260px;
+        left: 120px;
+        top: 10px;
+    }
+}
+@media (max-width: 330px){
+    #main .left .top{
+        height: 120px;
+        width: 260px;
+        top: 100px;
+        left: 10px;
+        padding: 10px 10px;
+    }
+    #main .left .bottom{
+        height: 120px;
+        width: 260px;
+        left: 80px;
+        top: 10px;
+    }
+}
+
